@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+* {
+    
+
+
+   
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Oswald', sans-serif;
+
+    
+}   
+
+body {
+    background: rgb(4,82,78);
+    background: linear-gradient(90deg, rgba(4,82,78,1) 0%, rgba(32,181,191,1) 58%, rgba(191,254,255,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    height: 100vh;
+    
+}
+
+.operands {
+    display: flex;
+    flex-direction: column;
+    
+    font-size: 1.5rem;
+    background-color: rgb(34, 34, 34,0.7);
+    width: 400px;
+    text-align: end;
+    height: fit-content;
+    min-height: 117px;
+    padding: 7px;
+    word-wrap: break-word;
+    
+}
+
+.current-operand{
+    font-size: 3rem;
+    
+    
+}
+.previous-operand {
+    height: 16px;
+    margin-bottom: 15px;
+    
+}
+.buttons {
+    display: flex;
+    width: 400px;
+    flex-wrap: wrap;
+    
+}
+
+
+button {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    background-color: #c5e6e1;
+    border: 1px solid rgb(255, 255, 255);
+    transition: .5s;
+    color: black;
+    
+}
+
+button:hover {
+    background-color: rgb(27, 26, 26);
+    color:white;
+    border: 1px solid rgb(27, 26, 26);
+    transition: .5s;
+    cursor:pointer;
+}
+.span-two {
+    width: 200px;
+    
+}
+
+.previous-operand {
+    color:rgb(202, 202, 202);
+
+}
+
+
+
+@media screen 
+  and (min-device-width: 200px) 
+  and (max-device-width: 400px) {
+    
+
+    .operands {
+        width:280px;
+    }
+
+    button {
+        width: 70px;
+        height: 70px;
+    }
+
+    .buttons {
+        
+        width: 280px;
+        
+        
+    }
+    .span-two {
+        width: 140px;
+        
+    }
+  }
